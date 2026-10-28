@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es" style="background-color:rgba(233, 187, 255, 0.644);">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Sitio de frases Historicas de Personas, Anime y de Series Animadas">
+    <meta name="author" content="Jose velasquez">
+    <title>Palabras Que Perduran - Galería de Frases</title> 
+</head>
+<body>
+    
+    <header>
+        <h1 style="text-align: center;">Palabras que perduran</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#historicos">Historicos</a></li>
+                <li><a href="#anime">Anime</a></li>
+                <li><a href="#animados">Animados</a></li>
+                <li><a href="#sugerencias">Sugerencias</a></li>
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="historicos">
+            <h2 style="text-align: center; text-decoration: underline; color: rgb(2, 2, 2);">Personajes Históricos</h2>
+            
+            <img src="img/einstein.jpg" alt="Retrato de Albert Einstein" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Albert Einstein:</strong> "Hay dos maneras de vivir la vida: una es como si nada fuera un milagro; la otra es como si todo fuera un milagro."</p>
+         
+            <img src="img/socrates.jpg" alt="Retrato del filósofo Sócrates" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Sócrates:</strong>"La verdadera sabiduría está en reconocer la propia ignorancia."</p>
+        
+            <img src="img/nizar.jpg" alt="Foto del Poeta Nizar Qabbani" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Nizar Qabbani:</strong>"En mis sueños eres mía... en la realidad dire que eres mi sueño."</p> 
+        </section>
+
+        <hr>
+
+        <section id="anime">
+            <h2 style="text-align: center; text-decoration: underline; color: rgb(2, 2, 2);">Personajes de anime</h2>
+
+            <img src="img/asta.png" alt="Asta, Protagonista de Black Clover" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Asta (Black Clover):</strong>"¡No me subestimes, destino! ¡Voy a lograrlo! No me importa si me tardo uno, diez o cien años. Me esforzaré
+                todo lo que pueda hasta conseguir mi objetivo. Voy a ser el Rey Mago y demostraré que, aunque seas pobre o huérfano, todo el mundo puede llegar a ser alguien increíble."</p>
+            
+            <img src="img/thorfinn.png" alt="Thorfinn" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Thorfinn:</strong>"¿Tu crees que la gente la gente pueda cambiar?. ¿Que se necesita para hacerlo?"</p>
+
+            <img src="img/kakashi.png" alt="Kakashi" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Kakashi Hatake:</strong>"Un ninja debe ver a traves de la decepción, en el mundo ninja aquellos que rompen 
+                las reglas. ¡Son escoria! es cierto, pero... aquellos que abandonan a un amigo son peor que la escoria."</p>
+        </section>
+
+        <hr>
+
+        <section id="animados">
+            <h2 style="text-align: center; text-decoration: underline; color: rgb(2, 2, 2);">Personajes animados</h2>
+
+            <img src="img/jake.png" alt="Jake El Perro" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Jake El Perro:</strong>"Ser malo en algo es el primer paso para ser bueno en eso."</p>
+            
+            <img src="img/batman.png" alt="Batman" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Batman:</strong>"No es lo que soy por dentro, sino lo que hago lo que me define."</p>
+
+            <img src="img/spiderman.jpg" alt="Spiderman" width="150" style="display: block; margin: auto;">
+            <p style="text-align: center"><strong>Spiderman:</strong>“No importa lo fuerte que seas. Todos necesitamos ayuda a veces.”</p>
+        </section>
+
+        <hr>
+
+        <section id="sugerencias">
+            <h2 style="text-align: center; text-decoration: underline; color: rgb(2, 2, 2);">Sugerencias de frases</h2>
+            <form>
+                <label for="personaje">Nombre del personaje:</label>
+                <input type="text" id="personaje" name="personaje" required>
+                <br><br>
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="hstorico">Historico</option>
+                    <option value="anime">Anime</option>
+                    <option value="animados">Animados</option>
+                </select>
+                <br><br>
+
+                <label for="frase">Frase:</label>
+                <br>
+                <textarea id="frase" name="frase" rows="4" cols="40" required></textarea>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="resumen">
+            <h2 style="text-align: center; text-decoration: underline; color: rgb(2, 2, 2);">Resumen de personajes</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>Categoria</th>
+                        <th>Tema</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Albert Eintein</td>
+                        <td>Historico</td>
+                        <td>Imaginacion</td>
+                    </tr>
+
+                    <tr>
+                        <td>Asta</td>
+                        <td>Anime</td>
+                        <td>Perseverancia</td>
+                    </tr>
+
+                    <tr>
+                        <td>Batman</td>
+                        <td>Animado</td>
+                        <td>Identidad</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Categorias</h3>
+            <ul>
+                <li>Personajes Historicos</li>
+                <li>Persoanjes de Anime</li>
+                <li>Personajes animados</li>
+            </ul>
+
+            <h3>Como usar el sitio</h3>
+            <ol>
+                <li>Elige una categoria en el menu.</li>
+                <li>Mira la imagen del persoanje.</li>
+                <li>Lee su frase.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <hr>
+    <footer id="contactanos">
+        <p>&copy; 2026 Palaras que perduran | José Velásquez - IUTIRLA</p>
+        <a href="mailto:Jose989pro@gmail.com">Enviar Correo</a>
+    </footer>
+</body>
+</html>
