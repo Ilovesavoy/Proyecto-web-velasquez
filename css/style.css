@@ -1,0 +1,322 @@
+:root {
+    --ink: #1d2738;
+    --muted: #647084;
+    --accent: #e8795b;
+    --accent-dark: #bf5138;
+    --paper: #fffdf9;
+    --soft: #f5f2ec;
+    --line: #e9e4dc;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.site-navbar {
+    background: #182333;
+}
+
+.navbar-brand {
+    letter-spacing: -0.04em;
+}
+
+.navbar-brand span {
+    color: #f1a187;
+}
+
+.site-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.94rem;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    color: #fff;
+}
+
+.site-navbar .nav-cta {
+    background: var(--accent);
+    border-radius: 999px;
+    color: #fff;
+    margin-left: 0.35rem;
+    padding: 0.55rem 1rem;
+}
+
+.site-navbar .nav-cta:hover,
+.site-navbar .nav-cta:focus {
+    background: var(--accent-dark);
+    color: #fff;
+}
+
+.hero-section {
+    background:
+        radial-gradient(ellipse at 86% 20%, rgba(232, 121, 91, 0.17), transparent 34%),
+        linear-gradient(125deg, #f8f3eb 0%, #fffdf9 68%);
+    overflow: hidden;
+}
+
+.min-vh-hero {
+    min-height: 31rem;
+}
+
+.eyebrow {
+    color: var(--accent-dark);
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.hero-section h1 {
+    color: var(--ink);
+    letter-spacing: -0.065em;
+    line-height: 0.98;
+    max-width: 13ch;
+}
+
+.hero-section h1 span {
+    color: var(--accent-dark);
+}
+
+.hero-copy {
+    color: var(--muted);
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    max-width: 38rem;
+}
+
+.btn-accent {
+    background: var(--accent);
+    border: 0;
+    color: #fff;
+    font-weight: 650;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.btn-accent:hover,
+.btn-accent:focus-visible {
+    background: var(--accent-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.hero-mark {
+    align-items: center;
+    background: rgba(232, 121, 91, 0.1);
+    border: 1px solid rgba(191, 81, 56, 0.14);
+    border-radius: 50%;
+    color: var(--accent-dark);
+    display: flex;
+    font-family: Georgia, serif;
+    font-size: 18rem;
+    height: 22rem;
+    justify-content: center;
+    line-height: 1;
+    padding-top: 5rem;
+    width: 22rem;
+}
+
+.quote-section {
+    scroll-margin-top: 5rem;
+}
+
+.section-soft {
+    background: var(--soft);
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    max-width: 43rem;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.85rem, 4vw, 2.6rem);
+    font-weight: 750;
+    letter-spacing: -0.045em;
+    margin: 0.45rem 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.quote-card {
+    background: #fff;
+    border: 1px solid rgba(29, 39, 56, 0.07);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.7rem rgba(29, 39, 56, 0.055);
+    overflow: hidden;
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.quote-card:hover {
+    box-shadow: 0 1rem 2.5rem rgba(29, 39, 56, 0.12);
+    transform: translateY(-4px);
+}
+
+.quote-image {
+    background: #ece8e1;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.quote-card .card-body {
+    padding: 1.4rem;
+}
+
+.category-label {
+    color: var(--accent-dark);
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.55rem;
+    text-transform: uppercase;
+}
+
+.quote-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+}
+
+.quote-card .card-text {
+    color: #4c5869;
+    line-height: 1.72;
+    margin-bottom: 0;
+}
+
+.suggestion-section {
+    background: #f6f1e9;
+}
+
+.suggestion-section .section-heading {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suggestion-panel {
+    background: #fff;
+    border: 1px solid rgba(29, 39, 56, 0.07);
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 3rem rgba(29, 39, 56, 0.08);
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.form-label {
+    font-size: 0.92rem;
+    font-weight: 650;
+}
+
+.form-control,
+.form-select {
+    border-color: #dedbd4;
+    border-radius: 0.7rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.22rem rgba(232, 121, 91, 0.17);
+}
+
+.saved-quotes {
+    border-top: 1px solid var(--line);
+}
+
+.saved-quotes .list-group-item {
+    background: transparent;
+    line-height: 1.65;
+}
+
+.privacy-note {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.summary-table {
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+    overflow: hidden;
+}
+
+.summary-table thead th {
+    background: #f5f2ec;
+    color: var(--ink);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.topic-chip {
+    background: #f5f2ec;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    text-decoration: none;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.topic-chip:hover,
+.topic-chip:focus-visible {
+    background: #f9e6df;
+    border-color: #e8b3a5;
+    color: var(--accent-dark);
+}
+
+.site-footer {
+    background: #182333;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.site-footer a {
+    color: #f1a187;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: #fff;
+}
+
+.footer-divider {
+    color: #f1a187;
+    padding: 0 0.25rem;
+}
+
+@media (max-width: 575.98px) {
+    .min-vh-hero {
+        min-height: auto;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(3rem, 16vw, 4.5rem);
+    }
+
+    .quote-image {
+        height: 12rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
